@@ -1,0 +1,25 @@
+
+
+<h2>Child 2</h2>
+<table class="table">
+    <thead>
+   <tr>
+    <th>Id</th>
+    <th>Title</th>
+    <th>Price</th>
+   </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let p of products">
+             <td>{{p.Id}}</td>
+             <td>{{p.Title}}</td>
+             <td>{{p.Price}}</td>
+        </tr>
+
+    </tbody>
+
+</table>
+
+<div *ngIf="message">
+    Stream Completed
+</div>
